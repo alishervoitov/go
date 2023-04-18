@@ -33,12 +33,23 @@
 // 	fmt.Println(age)
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var name string = "Alisher"
+// 	fmt.Println(name)
+// 	fmt.Println(len(name))
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	var name string = "Alisher"
-	fmt.Println(name)
-	fmt.Println(len(name))
+	var name string
+	fmt.Println("What's your name")
+	fmt.Scan(&name)
+	fmt.Println("Hello" + name)
 }
