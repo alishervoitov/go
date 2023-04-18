@@ -15,11 +15,20 @@
 // 	fmt.Println(age)
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var number float64 = 222.222
+// 	fmt.Println(number)
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	var number float64 = 222.222
-	fmt.Println(number)
+	age := 14.444333
+	fmt.Println(age)
 }
