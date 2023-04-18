@@ -24,11 +24,21 @@
 // 	fmt.Println(number)
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	age := 14.444333
+// 	fmt.Println(age)
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	age := 14.444333
-	fmt.Println(age)
+	var name string = "Alisher"
+	fmt.Println(name)
+	fmt.Println(len(name))
 }
