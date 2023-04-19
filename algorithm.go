@@ -43,13 +43,28 @@
 // 	fmt.Println(len(name))
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var name string
+// 	fmt.Println("What's your name")
+// 	fmt.Scan(&name)
+// 	fmt.Println("Hello " + " " + name)
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	var name string
-	fmt.Println("What's your name")
-	fmt.Scan(&name)
-	fmt.Println("Hello" + name)
+	num := -3
+	if num > 0 {
+		fmt.Println("Number is greater than 0")
+	} else if num < 0 {
+		fmt.Println("Number is little than 0")
+	} else if num == 3 {
+		fmt.Println("Number equals 3 !!!")
+	}
 }
