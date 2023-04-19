@@ -69,44 +69,61 @@
 // 	}
 // }
 
+// package main
+
+// import (
+// 	"fmt"
+// 	"math"
+// )
+
+// func main() {
+// 	var a float64
+// 	var b float64
+// 	var c float64
+
+// 	fmt.Println("Enter the number a")
+// 	fmt.Scan(&a)
+
+// 	fmt.Println("Enter the number b")
+// 	fmt.Scan(&b)
+
+// 	fmt.Println("Enter the number c")
+// 	fmt.Scan(&c)
+
+// 	D := b*b - 4*a*c
+
+// 	if D > 0 {
+// 		var x1 float64
+// 		var x2 float64
+
+// 		x1 = (-b + math.Sqrt(D)) / 2 * a
+// 		x2 = (-b - math.Sqrt(D)) / 2 * a
+// 		fmt.Println(fmt.Sprint(x1))
+// 		fmt.Println(fmt.Sprint(x2))
+// 	} else if D == 0 {
+// 		var x float64
+
+// 		x = (-b + math.Sqrt(D)) / 2 * a
+
+// 		fmt.Println(x)
+// 	} else if D < 0 {
+// 		fmt.Println("You can't solve this issue")
+// 	}
+// }
+
 package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	var a float64
-	var b float64
-	var c float64
-
+	var a int
 	fmt.Println("Enter the number a")
 	fmt.Scan(&a)
-
-	fmt.Println("Enter the number b")
-	fmt.Scan(&b)
-
-	fmt.Println("Enter the number c")
-	fmt.Scan(&c)
-
-	D := b*b - 4*a*c
-
-	if D > 0 {
-		var x1 float64
-		var x2 float64
-
-		x1 = (-b + math.Sqrt(D)) / 2 * a
-		x2 = (-b - math.Sqrt(D)) / 2 * a
-		fmt.Println(fmt.Sprint(x1))
-		fmt.Println(fmt.Sprint(x2))
-	} else if D == 0 {
-		var x float64
-
-		x = (-b + math.Sqrt(D)) / 2 * a
-
-		fmt.Println(x)
-	} else if D < 0 {
-		fmt.Println("You can't solve this issue")
+	if a%2 == 1 {
+		fmt.Println("Number a is odd number")
+	} else if a%2 == 0 {
+		fmt.Println("number a is even number")
 	}
 }
